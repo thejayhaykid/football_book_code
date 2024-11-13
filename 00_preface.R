@@ -1,3 +1,7 @@
+install.packages("tidyverse")
+install.packages("nflfastR")
+install.packages("ggthemes")
+
 ## Load packages
 library(tidyverse)
 library(nflfastR)
@@ -40,7 +44,7 @@ plot_1 <-
   ylab("Point difference") +
   xlab("Game location")
 plot_1
-ggsave("plot_1.png", plot_1, width = 6, heigh = 4)
+ggsave("data/plot_1.png", plot_1, width = 6, heigh = 4)
 
 # create and save plot 2
 plot_2 <-
@@ -58,7 +62,7 @@ plot_2 <-
   ylab("Point difference") +
   xlab("Game location")
 print(plot_2)
-ggsave("plot_2.png", plot_2, width = 6, heigh = 4, dpi = 400)
+ggsave("data/plot_2.png", plot_2, width = 6, heigh = 4, dpi = 400)
 
 # extract out summary statistics for in text use
 gb_games |>
